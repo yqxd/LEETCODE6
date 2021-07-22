@@ -55,11 +55,11 @@ const findRelativeRanks = (nums) => {
     let res = [];
     for (const score of nums) {
         let idx = tmp.indexOf(score);
-        if (idx + 1 == 1) {
+        if (idx + 1 === 1) {
             res.push("Gold Medal");
-        } else if (idx + 1 == 2) {
+        } else if (idx + 1 === 2) {
             res.push("Silver Medal");
-        } else if (idx + 1 == 3) {
+        } else if (idx + 1 === 3) {
             res.push("Bronze Medal");
         } else {
             res.push(idx + 1 + '');
@@ -69,7 +69,7 @@ const findRelativeRanks = (nums) => {
 };
 
 
-console.log(findRelativeRanks([5,4,3,2,1]))
+console.log(findRelativeRanks([5, 4, 3, 2, 1]))
 
 
 
